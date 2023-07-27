@@ -1,14 +1,4 @@
-import {
-  Box,
-  Flex,
-  Text,
-  IconButton,
-  Button,
-  Stack,
-  Collapse,
-  Link,
-  useDisclosure,
-} from '@chakra-ui/react';
+import { Box, Flex, Text, IconButton, Button, Stack, Collapse, Link, useDisclosure } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { Container } from './Container';
 
@@ -18,26 +8,16 @@ export default function WithSubnavigation() {
   return (
     <Container>
       <Flex color="gray.600" minH={{ base: '60px', lg: '80px' }} align="center">
-        <Flex
-          flex={{ base: 1, md: 'auto' }}
-          ml={{ base: -2 }}
-          display={{ base: 'flex', md: 'none' }}
-        >
+        <Flex flex={{ base: 1, md: 'auto' }} ml={{ base: -2 }} display={{ base: 'flex', md: 'none' }}>
           <IconButton
             onClick={onToggle}
-            icon={
-              isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
-            }
+            icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
             variant={'ghost'}
             aria-label={'Toggle Navigation'}
           />
         </Flex>
 
-        <Flex
-          flex={{ base: 1 }}
-          justify={{ base: 'center', md: 'space-between' }}
-          align="center"
-        >
+        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'space-between' }} align="center">
           <Text
             textAlign={{ base: 'center', md: 'left' }}
             fontFamily={'heading'}
@@ -49,28 +29,13 @@ export default function WithSubnavigation() {
             MinePag
           </Text>
 
-          <Flex
-            display={{ base: 'none', md: 'flex' }}
-            ml={10}
-            justify={{ md: 'flex-end' }}
-          >
+          <Flex display={{ base: 'none', md: 'flex' }} ml={10} justify={{ md: 'flex-end' }}>
             <DesktopNav />
           </Flex>
         </Flex>
 
-        <Stack
-          flex={{ base: 1, md: 0 }}
-          ms={{ md: 4 }}
-          justify={'flex-end'}
-          direction={'row'}
-          spacing={6}
-        >
-          <Button
-            fontSize={'sm'}
-            fontWeight={600}
-            variant="outline"
-            colorScheme="orange"
-          >
+        <Stack flex={{ base: 1, md: 0 }} ms={{ md: 4 }} justify={'flex-end'} direction={'row'} spacing={6}>
+          <Button fontSize={'sm'} fontWeight={600} variant="outline" colorScheme="orange">
             Entrar
           </Button>
         </Stack>
@@ -96,7 +61,7 @@ const DesktopNav = () => {
             color="gray.600"
             _hover={{
               textDecoration: 'none',
-              color: 'gray.800',
+              color: 'gray.800'
             }}
           >
             {navItem.label}
@@ -126,7 +91,7 @@ const MobileNavItem = ({ label, href }: NavItem) => {
       justify={'space-between'}
       align={'center'}
       _hover={{
-        textDecoration: 'none',
+        textDecoration: 'none'
       }}
     >
       <Text fontWeight={600} color="gray.600">

@@ -5,11 +5,7 @@ import { FadeInWhenVisible } from './FadeInWhenVisible';
 const Hero = () => {
   return (
     <Box px={4} pt="24" mx="auto">
-      <Box
-        w={{ base: 'full', md: 11 / 12, xl: 8 / 12 }}
-        textAlign={{ base: 'left', md: 'center' }}
-        mx="auto"
-      >
+      <Box w={{ base: 'full', md: 11 / 12, xl: 8 / 12 }} textAlign={{ base: 'left', md: 'center' }} mx="auto">
         <FadeInWhenVisible delayOrder="1">
           <Heading
             as="h1"
@@ -24,14 +20,8 @@ const Hero = () => {
         </FadeInWhenVisible>
 
         <FadeInWhenVisible delayOrder="2">
-          <Text
-            mb={6}
-            fontSize={{ base: 'lg', md: 'xl' }}
-            color="gray.500"
-            lineHeight="base"
-          >
-            Monetize de maneira simples seu servidor de jogo. <br />
-            Levamos transparência às finanças de seu servidor.
+          <Text mb={6} fontSize={{ base: 'lg', md: 'xl' }} color="gray.500" lineHeight="base">
+            Sua Plataforma Definitiva para Monetização de Servidores de Minecraft
           </Text>
         </FadeInWhenVisible>
 

@@ -21,10 +21,7 @@ export default function Home() {
           name="keywords"
           content="minepag, mine pag, mine-pag, venda, vender, servidor, minecraft, automaticamente"
         />
-        <meta
-          name="description"
-          content="Sistema para realizar vendas automaticamente em servidores de minecraft!"
-        />
+        <meta name="description" content="Sistema para realizar vendas automaticamente em servidores de minecraft!" />
       </Head>
 
       <Box bgImage="radial-gradient(102.29% 81.78% at 50% 30%, var(--chakra-colors-gray-50) 5%, var(--chakra-colors-gray-300) 100%)">

@@ -2,12 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
 
-export const FadeInWhenVisible = ({
-  children,
-  yOffset = 12,
-  easing = [0.42, 0, 0.58, 1],
-  delayOrder,
-}: any) => {
+export const FadeInWhenVisible = ({ children, yOffset = 12, easing = [0.42, 0, 0.58, 1], delayOrder }: any) => {
   const controls = useAnimation();
   const [intersectionRef, inView] = useInView();
   const [delay, setDelay] = useState(0.5);
@@ -30,7 +25,7 @@ export const FadeInWhenVisible = ({
     () => ({
       duration: 0.25,
       delay,
-      ease: easing,
+      ease: easing
     }),
     [delay, easing]
   );
@@ -41,17 +36,12 @@ export const FadeInWhenVisible = ({
       y: 0,
       x: 0,
       opacity: 1,
-      transition,
-    },
+      transition
+    }
   };
 
   return (
-    <motion.div
-      ref={intersectionRef}
-      initial="hidden"
-      animate={controls}
-      variants={variants}
-    >
+    <motion.div ref={intersectionRef} initial="hidden" animate={controls} variants={variants}>
       {children}
     </motion.div>
   );
