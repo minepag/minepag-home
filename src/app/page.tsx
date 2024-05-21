@@ -11,7 +11,7 @@ import Pricing from '../components/Pricing';
 export default function Home() {
   return (
     <>
-      <Box bgImage="radial-gradient(102.29% 81.78% at 50% 30%, var(--chakra-colors-gray-50) 5%, var(--chakra-colors-gray-300) 100%)">
+      <Box bgImage="radial-gradient(102.29% 81.78% at 50% 30%, var(--chakra-colors-gray-50) 5%, var(--chakra-colors-gray-200) 100%)">
         <NavBar />
         <Hero />
       </Box>
