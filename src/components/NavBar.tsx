@@ -20,6 +20,8 @@ export default function WithSubnavigation() {
 
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'space-between' }} align="center">
           <Text
+            className="headline"
+            cursor="default"
             textAlign={{ base: 'center', md: 'left' }}
             fontFamily={'heading'}
             color="gray.800"
@@ -27,7 +29,10 @@ export default function WithSubnavigation() {
             fontWeight="bold"
             letterSpacing="tight"
           >
-            MinePag
+            Mine{' '}
+            <Text as="span" color="orange.500">
+              Pag
+            </Text>
           </Text>
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10} justify={{ md: 'flex-end' }}>
