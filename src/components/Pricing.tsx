@@ -1,5 +1,5 @@
-import React, { FC, PropsWithChildren } from 'react';
-import { Box, Flex, Text, Stack, SimpleGrid, Icon, Button, Heading } from '@chakra-ui/react';
+import { Box, Button, Flex, Heading, Icon, SimpleGrid, Stack, Text } from '@chakra-ui/react';
+import { FC, PropsWithChildren } from 'react';
 import { Container } from './Container';
 import { FadeInWhenVisible } from './FadeInWhenVisible';
 

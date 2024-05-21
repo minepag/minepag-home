@@ -1,14 +1,10 @@
-import { extendTheme, ThemeConfig } from '@chakra-ui/react';
+import { extendTheme } from '@chakra-ui/react';
 
-const config: ThemeConfig = {
-  initialColorMode: 'light',
-  useSystemColorMode: false,
-};
+import { fonts } from '../app/fonts';
 
 export const theme = extendTheme({
-  config,
   fonts: {
-    heading: 'Poppins, sans-serif',
-    body: 'Roboto, sans-serif',
-  },
+    heading: fonts.poppins.style.fontFamily,
+    body: fonts.roboto.style.fontFamily
+  }
 });

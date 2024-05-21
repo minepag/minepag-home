@@ -1,5 +1,4 @@
-import React from 'react';
-import { Heading, Box, Text, Image } from '@chakra-ui/react';
+import { Box, Heading, Image, Text } from '@chakra-ui/react';
 import { FadeInWhenVisible } from './FadeInWhenVisible';
 
 const Hero = () => {

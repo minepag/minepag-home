@@ -1,6 +1,6 @@
-import React, { useEffect, useMemo, useState } from 'react';
-import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
+import { useEffect, useMemo, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 export const FadeInWhenVisible = ({ children, yOffset = 12, easing = [0.42, 0, 0.58, 1], delayOrder }: any) => {
   const controls = useAnimation();

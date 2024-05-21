@@ -1,5 +1,6 @@
-import { Box, Flex, Text, IconButton, Button, Stack, Collapse, Link, useDisclosure } from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
+import { Box, Button, Collapse, Flex, IconButton, Link, Stack, Text, useDisclosure } from '@chakra-ui/react';
+
 import { Container } from './Container';
 
 export default function WithSubnavigation() {
