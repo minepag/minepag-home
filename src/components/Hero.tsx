@@ -1,4 +1,4 @@
-import { Box, Heading, Image, Text } from '@chakra-ui/react';
+import { Badge, Box, Heading, Image, Text } from '@chakra-ui/react';
 import { FadeInWhenVisible } from './FadeInWhenVisible';
 
 const Hero = () => {
@@ -6,6 +6,9 @@ const Hero = () => {
     <Box px={4} pt="24" mx="auto">
       <Box w={{ base: 'full', md: 11 / 12, xl: 8 / 12 }} textAlign={{ base: 'left', md: 'center' }} mx="auto">
         <FadeInWhenVisible delayOrder="1">
+          <Badge colorScheme="orange" fontSize="sm" px={3} py={1} mb={4} borderRadius="full">
+            🚧 Em Desenvolvimento
+          </Badge>
           <Heading
             as="h1"
             mb={3}
@@ -14,13 +17,13 @@ const Hero = () => {
             color="gray.900"
             lineHeight="shorter"
           >
-            Entender. Adaptar. Crescer.
+            Venda. Escale. Prospere.
           </Heading>
         </FadeInWhenVisible>
 
         <FadeInWhenVisible delayOrder="2">
-          <Text mb={6} fontSize={{ base: 'lg', md: 'xl' }} color="gray.500" lineHeight="base">
-            Sua Plataforma Definitiva para Monetização de Servidores de Minecraft
+          <Text mb={6} fontSize={{ base: 'lg', md: 'xl' }} color="gray.500">
+            A plataforma completa para produtores de conteúdo digital e prestadores de serviços online
           </Text>
         </FadeInWhenVisible>
 

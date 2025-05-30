@@ -31,16 +31,15 @@ export default function Features() {
             <Heading
               mt={2}
               fontSize={{ base: '3xl', sm: '4xl' }}
-              lineHeight="8"
               fontWeight="extrabold"
               letterSpacing="tight"
               color="gray.900"
             >
-              A melhor maneira de monetizar seu servidor
+              A melhor maneira de monetizar seu conteúdo digital
             </Heading>
 
             <Text mt={4} fontSize="xl" mx={{ lg: 'auto' }} color="gray.500">
-              Gerencie sua loja online sem complicações.
+              Venda seus produtos e serviços com a tecnologia que você merece.
             </Text>
           </FadeInWhenVisible>
         </Box>
@@ -53,28 +52,24 @@ export default function Features() {
             gridColumnGap={{ md: 32 }}
             gridRowGap={{ md: 8 }}
           >
-            <Feature title="Totalmente automático">
-              Após as configurações da loja e do plugin, tudo irá funcionar sozinho. Os pagamentos e entregas são
-              processados sem interação humana, garantindo a eficiência e a tranquilidade para você se concentrar no que
-              realmente importa - seu servidor.
+            <Feature title="Checkout Otimizado">
+              Sistema de pagamento inteligente com taxa de conversão otimizada. Aceite PIX e cartão de crédito com
+              processamento automático e entrega instantânea de produtos digitais.
             </Feature>
 
-            <Feature title="Suporte">
-              Nossa equipe de suporte especializada está sempre disponível para ajudá-lo com qualquer dúvida ou
-              problema. Com vasta experiência e conhecimento em Minecraft e monetização de servidores, estamos aqui para
-              garantir que sua operação funcione de maneira suave e eficiente.
+            <Feature title="Sites White Label">
+              Cada cliente recebe um site personalizado com seu próprio domínio. Design profissional, responsivo e
+              totalmente customizável para refletir sua marca única.
             </Feature>
 
-            <Feature title="Plugin integrado">
-              Nosso plugin integrado facilita a configuração e o gerenciamento de sua loja. Projetado para ser fácil de
-              usar, mas incrivelmente poderoso, você pode personalizar sua loja para se adequar às suas necessidades
-              específicas, garantindo que sua loja seja tão única quanto seu servidor.
+            <Feature title="Gestão Completa">
+              Painel administrativo completo para gerenciar produtos, vendas, clientes e métricas. Tudo centralizado em
+              uma interface intuitiva e poderosa.
             </Feature>
 
-            <Feature title="Auto-Hospedado">
-              Com a opção de auto-hospedagem, você tem total controle sobre seus dados e operações. Isso proporciona
-              maior segurança e flexibilidade, permitindo que você gerencie sua loja exatamente da maneira que deseja,
-              com a tranquilidade de saber que seus dados estão seguros.
+            <Feature title="Automação Total">
+              Após a configuração inicial, tudo funciona automaticamente. Vendas, entregas e acompanhamento de métricas
+              sem intervenção manual.
             </Feature>
           </Stack>
         </FadeInWhenVisible>

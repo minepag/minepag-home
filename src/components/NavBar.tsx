@@ -1,5 +1,4 @@
-import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
-import { Box, Button, Collapse, Flex, IconButton, Link, Stack, Text, useDisclosure } from '@chakra-ui/react';
+import { Box, Flex, Link, Stack, Text, useDisclosure } from '@chakra-ui/react';
 
 import { Container } from './Container';
 
@@ -9,16 +8,16 @@ export default function WithSubnavigation() {
   return (
     <Container>
       <Flex color="gray.600" minH={{ base: '60px', lg: '80px' }} align="center">
-        <Flex flex={{ base: 1, md: 'auto' }} ml={{ base: -2 }} display={{ base: 'flex', md: 'none' }}>
+        {/* <Flex flex={{ base: 1, md: 'auto' }} ml={{ base: -2 }} display={{ base: 'flex', md: 'none' }}>
           <IconButton
             onClick={onToggle}
             icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
             variant={'ghost'}
             aria-label={'Toggle Navigation'}
           />
-        </Flex>
+        </Flex> */}
 
-        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'space-between' }} align="center">
+        <Flex flex={{ base: 1 }} justify={{ md: 'space-between' }} align="center">
           <Text
             className="headline"
             cursor="default"
@@ -35,21 +34,21 @@ export default function WithSubnavigation() {
             </Text>
           </Text>
 
-          <Flex display={{ base: 'none', md: 'flex' }} ml={10} justify={{ md: 'flex-end' }}>
+          {/* <Flex display={{ base: 'none', md: 'flex' }} ml={10} justify={{ md: 'flex-end' }}>
             <DesktopNav />
-          </Flex>
+          </Flex> */}
         </Flex>
 
-        <Stack flex={{ base: 1, md: 0 }} ms={{ md: 4 }} justify={'flex-end'} direction={'row'} spacing={6}>
+        {/* <Stack flex={{ base: 1, md: 0 }} ms={{ md: 4 }} justify={'flex-end'} direction={'row'} spacing={6}>
           <Button fontSize={'sm'} fontWeight={600} variant="outline" colorScheme="orange">
             Entrar
           </Button>
-        </Stack>
+        </Stack> */}
       </Flex>
 
-      <Collapse in={isOpen} animateOpacity>
+      {/* <Collapse in={isOpen} animateOpacity>
         <MobileNav />
-      </Collapse>
+      </Collapse> */}
     </Container>
   );
 }

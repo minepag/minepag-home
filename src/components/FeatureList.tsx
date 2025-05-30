@@ -3,7 +3,7 @@ import { FC, PropsWithChildren } from 'react';
 import { Container } from './Container';
 import { FadeInWhenVisible } from './FadeInWhenVisible';
 
-export default function Wfl() {
+export default function FeatureList() {
   const Feature: FC<PropsWithChildren> = props => {
     return (
       <Flex>
@@ -32,13 +32,15 @@ export default function Wfl() {
       >
         <FadeInWhenVisible delayOrder={1}>
           <VStack direction="column" flexGrow={1} spacing={5} alignItems="start">
-            <Feature>Domínio próprio</Feature>
-            <Feature>Sem anúncios</Feature>
-            <Feature>Coupons de desconto</Feature>
-            <Feature>Contas de equipe</Feature>
-            <Feature>Controle total de estilos</Feature>
-            <Feature>99.8% Uptime</Feature>
-            <Feature>Criptografia HTTPS</Feature>
+            <Feature>Domínio personalizado</Feature>
+            <Feature>Design customizável</Feature>
+            <Feature>99.9% de disponibilidade</Feature>
+            <Feature>Múltiplos usuários</Feature>
+            <Feature>Analytics completo (LTV, Churn)</Feature>
+            <Feature>Upsell/Cross-sell automatizado</Feature>
+            <Feature>Notificações em tempo real</Feature>
+            <Feature>API robusta para integrações</Feature>
+            <Feature>Suporte especializado</Feature>
           </VStack>
         </FadeInWhenVisible>
 
@@ -47,19 +49,18 @@ export default function Wfl() {
             <Heading
               mt={2}
               fontSize={{ base: '3xl', sm: '4xl' }}
-              lineHeight="8"
               fontWeight="extrabold"
               letterSpacing="tight"
               color="gray.900"
             >
-              Um montes de recursos para você!
+              Tecnologia enterprise para seu negócio digital
             </Heading>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible delayOrder={2}>
             <Text mt={4} fontSize="xl" mx={{ lg: 'auto' }} color="gray.600">
-              Adoramos criar recursos que facilitam a execução do seu servidor! Independentemente do tamanho que sua
-              rede é, estamos comprometidos em fornecer as ferramentas que você precisa para prosperar.
+              Criamos uma plataforma completa para produtores de conteúdo, coaches, consultores e empreendedores
+              digitais. Tudo que você precisa para vender online está aqui.
             </Text>
           </FadeInWhenVisible>
         </Box>
