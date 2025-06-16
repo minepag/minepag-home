@@ -1,4 +1,18 @@
-import { Box, Button, Flex, Heading, Icon, SimpleGrid, Stack, Text } from '@chakra-ui/react';
+import { CheckIcon } from '@chakra-ui/icons';
+import {
+  Box,
+  Button,
+  Flex,
+  Heading,
+  HStack,
+  Icon,
+  List,
+  ListIcon,
+  ListItem,
+  SimpleGrid,
+  Stack,
+  Text
+} from '@chakra-ui/react';
 import { FC, PropsWithChildren } from 'react';
 import { Container } from './Container';
 import { FadeInWhenVisible } from './FadeInWhenVisible';
@@ -106,17 +120,43 @@ export default function Component() {
                 bg="#F9FAFB"
                 borderRightRadius="md"
               >
-                <Flex align="center" fontSize="5xl" fontWeight={['bold', 'bold', 'extrabold']}>
-                  8,99%
-                  <Text as="span" ml={2} fontSize="2xl" fontWeight="medium" color="gray.500">
-                    por venda
+                <Box w="full" lineHeight="none">
+                  <Text fontSize="sm" letterSpacing="-0.14px">
+                    Desde a sua primeira venda
                   </Text>
-                </Flex>
-                <Stack spacing={6}>
+                  <HStack mt={4} align="center" spacing={2} display={['flex', 'flex', 'flex', 'grid', 'flex']}>
+                    <Text as="strong" display="block" fontSize="5xl" fontWeight="bold">
+                      6.99%
+                    </Text>
+                    <Text as="span" fontSize="xl" letterSpacing="-0.18px" color="gray.500" fontWeight="medium">
+                      + R$ 1,99
+                    </Text>
+                  </HStack>
+                  <Text as="small" fontSize="xs" opacity={0.8} mt={['1', '1', '1', '2', '1']} display="block">
+                    por transação aprovada
+                  </Text>
+                </Box>
+
+                <Box mt="4" w="full" fontSize="sm">
+                  <Text mb={2}>Tempo de saque:</Text>
+
+                  <List spacing={2}>
+                    <ListItem display="flex" alignItems="center" fontSize="sm">
+                      <ListIcon as={CheckIcon} color="#00DA70" w={3} h={2.5} mr={3} />
+                      PIX em até 2 dias
+                    </ListItem>
+                    <ListItem display="flex" alignItems="center" fontSize="sm">
+                      <ListIcon as={CheckIcon} color="#00DA70" w={3} h={2.5} mr={3} />
+                      Cartão em até 15 dias
+                    </ListItem>
+                  </List>
+                </Box>
+
+                <Stack mt="4" spacing={6}>
                   <Button w="full" colorScheme="orange" py={6}>
                     Começar agora
                   </Button>
-                  <Text fontWeight="medium" color="gray.500">
+                  <Text fontWeight="medium" color="gray.500" fontSize="sm">
                     Cadastre-se gratuitamente e comece a vender hoje mesmo. Você só paga quando lucrar.
                   </Text>
                 </Stack>
